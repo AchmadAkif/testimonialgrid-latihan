@@ -1,0 +1,139 @@
+:root {
+    --Moderateviolet: hsl(263, 55%, 52%);
+    --Verydarkgrayishblue: hsl(217, 19%, 35%);
+    --Verydarkblackishblue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(0, 0%, 81%);
+    --Lightgrayishblue: hsl(210, 46%, 95%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Barlow Semi Condensed';
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: var(--Lightgrayishblue);
+}
+
+.container {
+    margin: 50px 30px;
+}
+
+.card {
+    min-width: 315px;
+    line-height: 1.5;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow:hsl(0, 0%, 50%)
+}
+
+.card .header {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.card .header .status {
+    opacity: 50%;
+}
+
+.card .header img {
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.card .quotes {
+    margin-bottom: 20px;
+}
+
+.card .quotes h3 {
+    font-size: 20px;
+}
+
+.card .paragraph {
+    opacity: 70%;
+}
+
+.daniel {
+    background-color: var(--Moderateviolet);
+    color: var(--White);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+}
+
+.daniel img {
+    border: 3px solid var(--Lightgray)
+}
+
+.jonathan {
+    background-color: var(--Verydarkgrayishblue);
+    color: white;
+}
+
+.jeanette {
+    background-color: white;
+    color: var(--Verydarkgrayishblue)
+}
+
+.patrick {
+    background-color: var(--Verydarkblackishblue);
+    color: white;
+}
+
+.patrick img {
+    border: 3px solid var(--Moderateviolet)
+}
+
+.kira {
+    background-color: white;
+    color: var(--Verydarkgrayishblue)
+}
+
+@media only screen and (min-width: 769px) {
+    .card {
+        margin: 0;
+    }
+
+    
+    
+    .container {
+        display: flex;
+        gap: 30px
+    }  
+    
+    .left-content {
+        flex: 3;
+    }
+
+    .side-content {
+        flex: 1;
+    }
+
+    .top-flex {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 30px
+    }
+
+    .bottom-flex {
+        display: flex;
+        gap: 30px
+    }
+
+    .kira {
+        height: 100%;
+    }
+
+    
+    
+}
+
+
+
